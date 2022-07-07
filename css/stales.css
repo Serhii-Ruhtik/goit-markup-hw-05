@@ -745,7 +745,12 @@ img {
   margin-bottom: 30px;
 }
 
-.flex-element:hover {
+.items {
+  display: block;
+}
+
+.items:hover,
+.items:focus {
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
 }
@@ -810,10 +815,12 @@ img {
 /* .overlay:hover:before{
   transform: translateY(0);
 } */
-.flex-element:hover .overlay-text {
+.items:hover .overlay-text,
+.items:focus .overlay-text {
   transform: translateY(0);
 }
-.flex-element:hover .overlay::before {
+.items:hover .overlay::before,
+.items:focus .overlay::before {
   transform: translateY(0);
 }
 
