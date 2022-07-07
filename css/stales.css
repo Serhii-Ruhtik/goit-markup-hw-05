@@ -720,7 +720,7 @@ img {
 
 .footer-container {
   display: flex;
-  justify-content: start;
+  align-items: baseline;
 }
 
 .flex-container {
