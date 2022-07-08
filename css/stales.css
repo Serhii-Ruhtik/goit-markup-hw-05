@@ -118,11 +118,13 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 1.14;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-note:hover,
 .text-note:focus {
   color: var(--acsent-text-color);
+  
 }
 
 .text-note.fonts {
@@ -338,6 +340,10 @@ img {
   bottom: 0;
   left: 0;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 100%;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -349,7 +355,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 27px 82px;
 }
 
 .item-main-features::before {
@@ -807,7 +812,7 @@ img {
 
   color: #ffffff;
 
-  transform: translateY(100%);
+  transform: translateY(101%);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -833,11 +838,14 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .modal {
@@ -849,6 +857,7 @@ img {
   width: 528px;
   height: 581px;
   background-color: var(--color-white);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button {
@@ -865,3 +874,5 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--color-white);
 }
+
+
